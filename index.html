@@ -1,9 +1,47 @@
 <html>
-<head>
-<title>My Payment Gateway</title>
+  <head>
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+      /* Start client-defined Callback Handler Functions */
+      function onOpenHandler () {
+        alert('Payments Modal is Opened');
+      }
 
-</head>
-<body>
-<h1>Hello World!</h1>
-</body>
+      function onCloseHandler () {
+        alert('Payments Modal is Closed');
+      }
+
+      function onPaymentSuccessHandler (response) {
+        alert('Payment Success');
+        console.log('Payment Success Response', response);
+      }
+
+      function onPaymentFailureHandler (response) {
+        alert('Payment Failure');
+        console.log('Payment Failure Response', response);
+      }
+      /* End client-defined Callback Handler Functions */
+
+      /* Configuring Handlers */
+      Instamojo.configure({
+        handlers: {
+          onOpen: onOpenHandler,
+          onClose: onCloseHandler,
+          onSuccess: onPaymentSuccessHandler,
+          onFailure: onPaymentFailureHandler
+        }
+      });
+      
+      function onButtonClick() {
+        Instamojo.open('https://test.instamojo.com/@nrajput2890');
+      }
+    </script>
+  </head>
+  <body>
+  <a href="https://test.instamojo.com/@nrajput2890/" rel="im-checkout" data-text="Order Now" data-css-style="color:#ffffff; background:#006b76; width:300px; border-radius:30px" data-image="https://cdn.filestackcontent.com/3O2V4bhvRCG5wUe9wU8w"  data-layout="vertical"></a>
+<script src="https://js.instamojo.com/v1/button.js"></script>
+    <button onclick="onButtonClick()">
+      Donate Here
+    </button>
+  </body>
 </html>

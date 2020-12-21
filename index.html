@@ -1,6 +1,9 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
     <script src="https://js.instamojo.com/v1/checkout.js"></script>
+
     <script>
       /* Start client-defined Callback Handler Functions */
       function onOpenHandler () {
@@ -38,10 +41,71 @@
     </script>
   </head>
   <body>
-  <a href="https://test.instamojo.com/@nrajput2890/" rel="im-checkout" data-text="Order Now" data-css-style="color:#ffffff; background:#006b76; width:300px; border-radius:30px" data-image="https://cdn.filestackcontent.com/3O2V4bhvRCG5wUe9wU8w"  data-layout="vertical"></a>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <a class="navbar-brand" href="#">Helping Paws</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " type="button" data-toggle="modal" data-target="#exampleModal" href="#">Donate</a>
+          </li>
+        </ul>
+         </div>
+    </nav>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title text-white" id="exampleModalLabel">Donate Helping Paws</h5>
+        <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        We feed street animals and give them warmth of humanity,<br> 
+        Let's come together and make world better with helping paws!
+      </div>
+      <div class="modal-footer align-items-center">
+      
+        <a href="https://test.instamojo.com/@nrajput2890/" rel="im-checkout"  data-css-style="color:#ffffff; width:70px; background:#006b76;" >Donate</a>
 <script src="https://js.instamojo.com/v1/button.js"></script>
-    <button onclick="onButtonClick()">
-      Donate Here
-    </button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron-text ">
+    <h2> Helping Paws</h2> 
+    <p>
+      We feed street animals and give them warmth of humanity,<br> 
+      Let's come together and make world better with helping paws!
+    </p>
+  </div>
+</div>
+ 
+<div class="card mx-auto" style="width: 22rem;">
+  <img class="card-img-top ml-3 d-flex" src="/pexels-jb-jorge-barreto-2932688.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Come and make lives better</h5>
+   
+  </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
